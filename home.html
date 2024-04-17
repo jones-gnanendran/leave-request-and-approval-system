@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Leave Application System</title>
+    <style>
+        /* Style for the body with violet linear gradient */
+        body {
+            background: linear-gradient(to bottom, #8a2be2, #9400d3);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #fff; /* Set text color to white */
+            position: relative; /* Set body position to relative */
+        }
+        
+        /* Style for the header */
+        header {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style for the dropdown */
+        .dropdown {
+            position: absolute; /* Position dropdown absolutely */
+            top: 20px; /* Distance from top */
+            right: 20px; /* Distance from right */
+        }
+
+        /* Style for the dropdown button */
+        .dropdown .dropdown-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+      
+        /* Style for the dropdown content */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+      
+        /* Style for the dropdown options */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+      
+        /* Style for the dropdown options on hover */
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+      
+        /* Show the dropdown content when dropdown button is clicked */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Style for the grid container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+            gap: 20px; /* Gap between grid items */
+            padding: 20px;
+        }
+
+        /* Style for grid items */
+        .grid-item {
+            background-color: purple; /* White background for contrast */
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        /* Style for the button inside grid items */
+        .grid-item button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            background-color: #4CAF50; /* Green background color */
+            color: #fff; /* White text color */
+            border-radius: 5px;
+        }
+
+        /* Style for the text inside grid items */
+        .grid-item p {
+            margin: 10px 0; /* Add margin for spacing */
+        }
+        .bullet-points {
+            background-color: #fff; /* White background */
+            color: #000; /* Black text color */
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            width: 500px;
+            margin-left: 500px;
+        }
+
+        /* Style for the bullet points list */
+        .bullet-points ul {
+            list-style-type: disc; /* Bullet points style */
+            padding-left: 20px; /* Indentation for bullet points */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with h1 tag -->
+    <header>
+        <h1>Welcome to National Engineering College's Leave Request Application</h1>
+    </header>
+
+    <!-- Dropdown container -->
+    <div class="dropdown">
+        <!-- Dropdown button -->
+        <button class="dropdown-btn">Login</button>
+        <!-- Dropdown options -->
+        <div class="dropdown-content">
+            <a href="staff.html">Staff Login</a>
+            <a href="Admin.html">Admin Login</a>
+        </div>
+    </div>
+
+    <!-- Grid container -->
+    <div class="grid-container">
+        <!-- First grid item -->
+        <div class="grid-item">
+          <button onclick="location.href='leave.html'">Quick Leave</button>
+            <p>Click here  to send a Request for any Leave Request caused By Sudden Situations</p>
+        </div>
+        <!-- Second grid item -->
+        <div class="grid-item">
+            <button onclick="location.href='permission.html'">One-Hour Permission</button>
+            <p>Click here to apply for an One-hour Permission for Emergencies.</p>
+        </div>
+      </div>
+    <div class="bullet-points">
+      <h3>Leave Application Guidelines</h3>
+      <ul>
+          <li>Only apply for Quick Leave in sudden Situations and ask for the Leave Request Before 9 AM</li>
+          <li>The Student Should Maintain a minimum of 80% Attendance to attend the End Semester Exam</li>
+          <li>An One Hour Permission will only be allocated to complete dire important Activities</li>
+          <li>This Application will allow only a maximum of one day Leave Request</li>
+      </ul>
+      </div>
+    
+  </div>
+</body>
+</html>

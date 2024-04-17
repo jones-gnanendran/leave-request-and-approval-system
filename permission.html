@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Permission Request Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+   <center> <h2>One-Hour Permission form</h2> </center>
+  <div class="container">
+    
+    <form action="grant.php" method="POST">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"placeholder="Enter Your Name:" required>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" placeholder="Enter your Age:" required>
+      </div>
+
+      <div class="form-group">
+        <label for="reg-no">Registration Number:</label>
+        <input type="text" id="reg-no" name="reg-no" required placeholder="Enter your Reg.No:">
+      </div>
+
+      <div class="form-group">
+        <label for="reason">Reason for Permission:</label><br>
+        <textarea id="reason" name="reason" rows="4" cols="50" required placeholder="Enter Your Reason for the permission:"></textarea>
+      </div>
+
+      
+      <input type="submit" value="Submit" name="Submit">
+    </form>
+  </div>
+</body>
+
+</html>

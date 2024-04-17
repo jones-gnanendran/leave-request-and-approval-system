@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Absentee Count</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+      gap: 20px;
+    }
+
+    .box {
+      width: 500px;
+      height: 500px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .department-name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .absentees-count {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .view-button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .view-button:hover {
+      background-color: #0056b3;
+    }
+
+    .total-count {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      margin-left: 700px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+        <img src="AIDS.jpeg" alt="AIDS Image">
+      <div class="department-name">AIDS</div>
+      <div class="absentees-count">2 Absentees</div>
+      <button class="view-button">View</button>
+    </div>
+    <div class="box">
+        <img src="cse.jpeg" alt="AIDS Image">
+      <div class="department-name">CSE</div>
+      <div class="absentees-count">3 Absentees</div>
+      <button class="view-button">View</button>
+    </div>
+    <div class="box">
+        <img src="It.jpeg" alt="AIDS Image">
+      <div class="department-name">IT</div>
+      <div class="absentees-count">1 Absentee</div>
+      <button class="view-button">View</button>
+    </div>
+    <div class="box">
+        <img src="ECE.jpeg" alt="AIDS Image">
+      <div class="department-name">ECE</div>
+      <div class="absentees-count">0 Absentees</div>
+      <button class="view-button">View</button>
+    </div>
+    <div class="box">
+        <img src="EEE.jpeg" alt="AIDS Image">
+      <div class="department-name">EEE</div>
+      <div class="absentees-count">4 Absentees</div>
+      <button class="view-button">View</button>
+    </div>
+    <div class="box">
+        <img src="civil.jpeg" alt="AIDS Image">
+      <div class="department-name">CIVIL</div>
+      <div class="absentees-count">1 Absentee</div>
+      <button class="view-button">View</button>
+    </div>
+    <div class="box">
+        <img src="Mech.jpeg" alt="AIDS Image">
+      <div class="department-name">MECH</div>
+      <div class="absentees-count">4 Absentees</div>
+      <button class="view-button">View</button>
+    </div>
+  </div>
+  <div class="total-count">Total Absentees: 15</div>
+</body>
+
+</html>
